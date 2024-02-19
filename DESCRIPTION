@@ -20,4 +20,5 @@ Imports:
   clusterProfiler,
   fanyi,
   pak,
-  showtext
+  showtext,
+  showtextdb
