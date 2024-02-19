@@ -14,7 +14,7 @@
 #' @importFrom purrr map
 #' @importFrom magrittr %>%
 #' @importFrom clusterProfiler enricher
-myenricher <- function(def = NULL, gson = NULL,gene=genes,...) {
+myenricher <- function(def = NULL, gson = NULL,gene,...) {
   # 参数验证
   if (is.null(def) || is.null(gson)) {
     stop("def and gson must not be NULL")

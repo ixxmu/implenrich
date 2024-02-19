@@ -32,8 +32,11 @@
 #' @importFrom magrittr %>%
 #' @importFrom pak pkg_install
 #' @importFrom utils install.packages
+#' @importFrom showtextdb font_install
+#' @importFrom showtextdb source_han_serif
 #' @importFrom showtext showtext_auto
-
+#'
+#'
 install_packages_with_pak <- function(packages) {
   # 检查pak是否已安装
   if (!requireNamespace("pak", quietly = TRUE)) {
@@ -43,6 +46,15 @@ install_packages_with_pak <- function(packages) {
   # 使用pak安装所需包
   pak::pkg_install(packages)
 }
+
+# 使用示例
+# install_packages_with_pak(pkgs_lists)
+
+# # 还有直接的向量化函数，厉害了
+# vectorized_function <- Vectorize(check_and_install_packages)
+# invisible(lapply(pkgs_install,check_and_install_packages))
+#
+# vectorized_function(pkgs_install)
 
 # 还需要解决字体的问题，我的服务器不会显示中文
 load_font_ch<-function(yes=1){
@@ -56,12 +68,3 @@ load_font_ch<-function(yes=1){
 
 
 # load_font_ch(1)
-
-# 使用示例
-# install_packages_with_pak(pkgs_lists)
-
-# # 还有直接的向量化函数，厉害了
-# vectorized_function <- Vectorize(check_and_install_packages)
-# invisible(lapply(pkgs_install,check_and_install_packages))
-#
-# vectorized_function(pkgs_install)

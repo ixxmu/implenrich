@@ -4,7 +4,7 @@
 \alias{myenricher}
 \title{Title}
 \usage{
-myenricher(def = NULL, gson = NULL, gene = genes, ...)
+myenricher(def = NULL, gson = NULL, gene, ...)
 }
 \arguments{
 \item{def}{The "def" is to be consistent with the results obtained by the company, as they filtered the meridians based on the selected genes.
