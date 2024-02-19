@@ -6,7 +6,9 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of impenrich is to …
+The main function of this R package is to supplement Yulab enricher, as
+well as some other middleware. It is mainly for personal use and
+recording. If I don’t record it, I will forget it all.
 
 ## Installation
 
@@ -17,6 +19,16 @@ You can install the development version of impenrich from
 # install.packages("devtools")
 devtools::install_github("ixxmu/implenrich")
 ```
+
+To cite fanyi in publications use:
+
+G Yu. Using fanyi to assist research communities in retrieving and
+interpreting information. ***bioRxiv***, 2023. doi:
+[10.1101/2023.12.21.572729](https://www.biorxiv.org/content/10.1101/2023.12.21.572729).
+
+## :writing_hand: Authors
+
+## :beginner: Usages
 
 ## Example
 
